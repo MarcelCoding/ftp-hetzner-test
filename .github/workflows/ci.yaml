@@ -14,7 +14,7 @@ jobs:
       - run: mkdir -p dist
       - run: echo "<h1>${{ github.sha }}</h1>" > dist/index.html
       
-      - uses: amKirkland/FTP-Deploy-Action@4.3.3
+      - uses: SamKirkland/FTP-Deploy-Action@cfcb39fa3cdf2ff98ac1a7fbfa539d20526d474d
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
